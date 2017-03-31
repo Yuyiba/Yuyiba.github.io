@@ -1,0 +1,649 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="如何在更换后电脑更新hexo博客1、从官网Git下载git，在新电脑上安装，因为https速度慢，而且每次都要输入口令，常用的是使用ssh。使用下面方法创建：（1）打开git bash，在用户主目录下运行：ssh-keygen -t rsa -C &amp;quot;youremail@example.com&amp;quot; 把其中的邮件地址换成自己的邮件地址，然后一路回车（2）最后完成后，会在用户主目录下生">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何在更换后电脑更新hexo博客">
+<meta property="og:url" content="http://yoursite.com/2017/03/31/测试/index.html">
+<meta property="og:site_name" content="Yuyiba">
+<meta property="og:description" content="如何在更换后电脑更新hexo博客1、从官网Git下载git，在新电脑上安装，因为https速度慢，而且每次都要输入口令，常用的是使用ssh。使用下面方法创建：（1）打开git bash，在用户主目录下运行：ssh-keygen -t rsa -C &amp;quot;youremail@example.com&amp;quot; 把其中的邮件地址换成自己的邮件地址，然后一路回车（2）最后完成后，会在用户主目录下生">
+<meta property="og:updated_time" content="2017-03-31T11:19:26.877Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何在更换后电脑更新hexo博客">
+<meta name="twitter:description" content="如何在更换后电脑更新hexo博客1、从官网Git下载git，在新电脑上安装，因为https速度慢，而且每次都要输入口令，常用的是使用ssh。使用下面方法创建：（1）打开git bash，在用户主目录下运行：ssh-keygen -t rsa -C &amp;quot;youremail@example.com&amp;quot; 把其中的邮件地址换成自己的邮件地址，然后一路回车（2）最后完成后，会在用户主目录下生">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/03/31/测试/"/>
+
+
+
+
+
+  <title> 如何在更换后电脑更新hexo博客 | Yuyiba </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Yuyiba</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+    
+      <p class="site-subtitle">与君歌一曲 请君为我倾耳听</p>
+    
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/31/测试/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Yuyiba">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Yuyiba">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Yuyiba" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                如何在更换后电脑更新hexo博客
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-31T19:18:30+08:00">
+                2017-03-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="如何在更换后电脑更新hexo博客"><a href="#如何在更换后电脑更新hexo博客" class="headerlink" title="如何在更换后电脑更新hexo博客"></a>如何在更换后电脑更新hexo博客</h3><h4 id="1、从官网Git下载git，在新电脑上安装，因为https速度慢，而且每次都要输入口令，常用的是使用ssh。使用下面方法创建："><a href="#1、从官网Git下载git，在新电脑上安装，因为https速度慢，而且每次都要输入口令，常用的是使用ssh。使用下面方法创建：" class="headerlink" title="1、从官网Git下载git，在新电脑上安装，因为https速度慢，而且每次都要输入口令，常用的是使用ssh。使用下面方法创建："></a>1、从官网Git下载git，在新电脑上安装，因为https速度慢，而且每次都要输入口令，常用的是使用ssh。使用下面方法创建：</h4><p>（1）打开git bash，在用户主目录下运行：<code>ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</code> 把其中的邮件地址换成自己的邮件地址，然后一路回车<br>（2）最后完成后，会在用户主目录下生成.ssh目录，里面有id_rsa和id_rsa.pub两个文件，这两个就是SSH key密钥对，id_rsa是私钥，千万不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人。<br>（3）登陆GitHub，打开「Settings」-&gt;「SSH and GPG keys」，然后点击「new SSH key」，填上任意Title，在Key文本框里粘贴公钥id_rsa.pub文件的内容（千万不要粘贴成私钥了！），最后点击「Add SSH Key」，你就应该看到已经添加的Key。</p>
+<blockquote>
+<p>注意：不要在git版本库中运行ssh，然后又将它提交，这样就把密码泄露出去了。</p>
+</blockquote>
+<h4 id="2、下载Node-js，并安装"><a href="#2、下载Node-js，并安装" class="headerlink" title="2、下载Node.js，并安装"></a>2、下载Node.js，并安装</h4><h4 id="3、打开git-bash客户端，输入-npm-install-hexo-cli-g，开始安装hexo"><a href="#3、打开git-bash客户端，输入-npm-install-hexo-cli-g，开始安装hexo" class="headerlink" title="3、打开git bash客户端，输入 npm install hexo-cli -g，开始安装hexo"></a>3、打开git bash客户端，输入 npm install hexo-cli -g，开始安装hexo</h4><h4 id="4、下面就将原来的文件拷贝到新电脑中，但是要注意哪些文件是必须的，哪些文件是可以删除的。"><a href="#4、下面就将原来的文件拷贝到新电脑中，但是要注意哪些文件是必须的，哪些文件是可以删除的。" class="headerlink" title="4、下面就将原来的文件拷贝到新电脑中，但是要注意哪些文件是必须的，哪些文件是可以删除的。"></a>4、下面就将原来的文件拷贝到新电脑中，但是要注意哪些文件是必须的，哪些文件是可以删除的。</h4><p>（1）讨论下哪些文件是必须拷贝的：首先是之前自己修改的文件，像站点配置_config.yml，theme文件夹里面的主题，以及source里面自己写的博客文件，这些肯定要拷贝的。除此之外，还有三个文件需要有，就是scaffolds文件夹（文章的模板）、package.json（说明使用哪些包）和.gitignore（限定在提交的时候哪些文件可以忽略）。其实，这三个文件不是我们修改的，所以即使丢失了，也没有关系，我们可以建立一个新的文件夹，然后在里面执行hexo init，就会生成这三个文件，我们只需要将它们拷贝过来使用即可。总结：_config.yml，theme/，source/，scaffolds/，package.json，.gitignore，是需要拷贝的。<br>（2）再讨论下哪些文件是不必拷贝的，或者说可以删除的：首先是.git文件，无论是在站点根目录下，还是主题目录下的.git文件，都可以删掉。然后是文件夹node_modules（在用npm install会重新生成），public（这个在用hexo g时会重新生成），.deploy_git文件夹（在使用hexo d时也会重新生成），db.json文件。其实上面这些文件也就是是.gitignore文件里面记载的可以忽略的内容。总结：.git/，node_modules/，public/，.deploy_git/，db.json文件需要删除。</p>
+<h4 id="5、在git-bash中切换目录到新拷贝的文件夹里，使用-npm-install-命令，进行模块安装。"><a href="#5、在git-bash中切换目录到新拷贝的文件夹里，使用-npm-install-命令，进行模块安装。" class="headerlink" title="5、在git bash中切换目录到新拷贝的文件夹里，使用 npm install 命令，进行模块安装。"></a>5、在git bash中切换目录到新拷贝的文件夹里，使用 npm install 命令，进行模块安装。</h4><p>很明显我们这里没用hexo init初始化，因为有的文件我们已经拷贝生成过来了，所以不必用hexo init去整体初始化，如果不慎在此时用了hexo init，则站点的配置文件_config.yml里面内容会被清空使用默认值，所以这一步一定要慎重，不要用hexo init。</p>
+<h4 id="6、安装其他的一些必要组件，如果在node-modules里面有的，就不要重复安装了。"><a href="#6、安装其他的一些必要组件，如果在node-modules里面有的，就不要重复安装了。" class="headerlink" title="6、安装其他的一些必要组件，如果在node_modules里面有的，就不要重复安装了。"></a>6、安装其他的一些必要组件，如果在node_modules里面有的，就不要重复安装了。</h4><p>（1）为了使用hexo d来部署到git上，需要安装npm install hexo-deployer-git –save（2）为了建立RSS订阅，需要安装npm install hexo-generator-feed –save（3）为了建立站点地图，需要安装npm install hexo-generator-sitemap –save插件安装后，有的需要对配置文件_config.yml进行配置，具体怎么配置，可以参考上面插件在github主页上的具体说明</p>
+<h4 id="7、使用hexo-g，然后使用hexo-d进行部署，如果都没有出错，就转移成功了！"><a href="#7、使用hexo-g，然后使用hexo-d进行部署，如果都没有出错，就转移成功了！" class="headerlink" title="7、使用hexo g，然后使用hexo d进行部署，如果都没有出错，就转移成功了！"></a>7、使用hexo g，然后使用hexo d进行部署，如果都没有出错，就转移成功了！</h4>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/31/sd/" rel="next" title="如何在更换后电脑更新hexo博客">
+                <i class="fa fa-chevron-left"></i> 如何在更换后电脑更新hexo博客
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Yuyiba" />
+          <p class="site-author-name" itemprop="name">Yuyiba</p>
+          <p class="site-description motion-element" itemprop="description">污~</p>
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#如何在更换后电脑更新hexo博客"><span class="nav-number">1.</span> <span class="nav-text">如何在更换后电脑更新hexo博客</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、从官网Git下载git，在新电脑上安装，因为https速度慢，而且每次都要输入口令，常用的是使用ssh。使用下面方法创建："><span class="nav-number">1.1.</span> <span class="nav-text">1、从官网Git下载git，在新电脑上安装，因为https速度慢，而且每次都要输入口令，常用的是使用ssh。使用下面方法创建：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、下载Node-js，并安装"><span class="nav-number">1.2.</span> <span class="nav-text">2、下载Node.js，并安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、打开git-bash客户端，输入-npm-install-hexo-cli-g，开始安装hexo"><span class="nav-number">1.3.</span> <span class="nav-text">3、打开git bash客户端，输入 npm install hexo-cli -g，开始安装hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、下面就将原来的文件拷贝到新电脑中，但是要注意哪些文件是必须的，哪些文件是可以删除的。"><span class="nav-number">1.4.</span> <span class="nav-text">4、下面就将原来的文件拷贝到新电脑中，但是要注意哪些文件是必须的，哪些文件是可以删除的。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5、在git-bash中切换目录到新拷贝的文件夹里，使用-npm-install-命令，进行模块安装。"><span class="nav-number">1.5.</span> <span class="nav-text">5、在git bash中切换目录到新拷贝的文件夹里，使用 npm install 命令，进行模块安装。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6、安装其他的一些必要组件，如果在node-modules里面有的，就不要重复安装了。"><span class="nav-number">1.6.</span> <span class="nav-text">6、安装其他的一些必要组件，如果在node_modules里面有的，就不要重复安装了。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7、使用hexo-g，然后使用hexo-d进行部署，如果都没有出错，就转移成功了！"><span class="nav-number">1.7.</span> <span class="nav-text">7、使用hexo g，然后使用hexo d进行部署，如果都没有出错，就转移成功了！</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yuyiba</span>
+</div>
+
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+      <!-- UY BEGIN -->
+      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid="></script>
+      <!-- UY END -->
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
